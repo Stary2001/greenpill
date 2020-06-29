@@ -877,7 +877,7 @@ Text Label 8050 3050 2    50   ~ 0
 pb23
 Wire Wire Line
 	7850 3050 8050 3050
-Text Label 8050 3150 2    50   ~ 0
+Text Label 8050 2850 2    50   ~ 0
 pa27
 Wire Wire Line
 	7850 3150 8050 3150
@@ -997,7 +997,7 @@ Wire Wire Line
 	7850 2550 8050 2550
 Wire Wire Line
 	7850 2850 8050 2850
-Text Label 8050 2850 2    50   ~ 0
+Text Label 8050 3150 2    50   ~ 0
 pa21
 Text Label 8750 3550 2    50   ~ 0
 vb
