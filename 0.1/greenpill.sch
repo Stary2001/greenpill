@@ -1278,7 +1278,7 @@ TODO\nReassign sercom to pins \nthat aren't broken out
 Text Notes 4700 5600 0    50   ~ 0
 TODO: \nwork out if/why SAMD51\n needs BOOT0 button
 Text Label 8400 3000 0    50   ~ 0
-user_button
+pa02
 Text Label 1950 3200 0    50   ~ 0
 usb_d-
 Wire Wire Line
@@ -1348,7 +1348,7 @@ pb01
 Text Label 7850 3200 2    50   ~ 0
 pb02
 Text Label 8400 3400 0    50   ~ 0
-user_led
+pb04
 Text Label 8400 3200 0    50   ~ 0
 pb30
 Text Notes 8600 3200 0    28   Italic 0
@@ -1364,7 +1364,7 @@ pa13
 Text Label 5850 2050 2    50   ~ 0
 pa14
 Text Label 5850 2300 2    50   ~ 0
-pb04
+pb08
 Text Label 5850 2400 2    50   ~ 0
-pa02
+pb06
 $EndSCHEMATC
