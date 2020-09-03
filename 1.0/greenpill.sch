@@ -1315,28 +1315,6 @@ Text Label 7850 2300 2    50   ~ 0
 usb_d-
 Text Label 7850 2400 2    50   ~ 0
 usb_d+
-Text Label 8400 2900 0    50   ~ 0
-pa04
-Text Label 8400 2800 0    50   ~ 0
-pa05
-Text Label 8400 2700 0    50   ~ 0
-pa06
-Text Label 8400 2600 0    50   ~ 0
-pa07
-Text Label 8400 2500 0    50   ~ 0
-pa08
-Text Label 8400 2400 0    50   ~ 0
-pa09
-Text Label 8400 2300 0    50   ~ 0
-pa10
-Text Label 8400 2200 0    50   ~ 0
-pb10
-Text Label 8400 2100 0    50   ~ 0
-pb11
-Text Label 8400 2000 0    50   ~ 0
-pb12
-Text Label 8400 1900 0    50   ~ 0
-pb13
 Text Label 7850 1600 2    50   ~ 0
 pa16
 Text Label 7850 1700 2    50   ~ 0
@@ -1351,26 +1329,8 @@ Text Label 9150 4000 2    50   ~ 0
 usb_d-
 Text Label 9150 4100 2    50   ~ 0
 usb_d+
-Text Label 7850 2100 2    50   ~ 0
-pb17
-Text Label 7850 2200 2    50   ~ 0
-pa20
-Text Label 7850 2500 2    50   ~ 0
-pa22
 Text Label 7850 2600 2    50   ~ 0
 pb22
-Text Label 7850 2700 2    50   ~ 0
-pb23
-Text Label 7850 2800 2    50   ~ 0
-pa27
-Text Label 7850 2900 2    50   ~ 0
-pb31
-Text Label 7850 3000 2    50   ~ 0
-pb00
-Text Label 7850 3100 2    50   ~ 0
-pb01
-Text Label 7850 3200 2    50   ~ 0
-pb02
 Text Label 8400 3400 0    50   ~ 0
 pb04
 Text Label 8400 3200 0    50   ~ 0
@@ -1445,4 +1405,55 @@ Wire Wire Line
 Wire Wire Line
 	1150 1250 1150 1050
 Connection ~ 1150 1050
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5F548A14
+P 4750 3300
+F 0 "#LOGO1" H 4750 3575 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 4750 3075 50  0001 C CNN
+F 2 "" H 4750 3300 50  0001 C CNN
+F 3 "~" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+Text Label 7850 2800 2    50   ~ 0
+pa27
+Text Label 7850 2700 2    50   ~ 0
+pb23
+Text Label 7850 3000 2    50   ~ 0
+pa22
+Text Label 7850 2900 2    50   ~ 0
+pb31
+Text Label 7850 3200 2    50   ~ 0
+pb02
+Text Label 7850 2200 2    50   ~ 0
+pb00
+Text Label 8400 2300 0    50   ~ 0
+pa10
+Text Label 8400 2400 0    50   ~ 0
+pa09
+Text Label 8400 2100 0    50   ~ 0
+pb11
+Text Label 8400 2200 0    50   ~ 0
+pb10
+Text Label 8400 1900 0    50   ~ 0
+pb13
+Text Label 8400 2000 0    50   ~ 0
+pb12
+Text Label 8400 2700 0    50   ~ 0
+pa07
+Text Label 8400 2900 0    50   ~ 0
+pa08
+Text Label 8400 2600 0    50   ~ 0
+pa06
+Text Label 8400 2800 0    50   ~ 0
+pa05
+Text Label 8400 2500 0    50   ~ 0
+pa04
+Text Label 7850 3100 2    50   ~ 0
+pb17
+Text Label 7850 2500 2    50   ~ 0
+pa20
+Text Label 7850 2100 2    50   ~ 0
+pb01
 $EndSCHEMATC
