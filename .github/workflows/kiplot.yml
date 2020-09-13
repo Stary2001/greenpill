@@ -39,3 +39,10 @@ jobs:
         name: Schematic and board PDFs
         path: docs/
         if-no-files-found: error
+    - name: Commit docs/
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add docs/greenpill-schematic.pdf docs/greenpill-board.pdf docs/greenpill-schematic.svg
+        git commit -m "Updated auto-generated files in docs/"
+        git push
