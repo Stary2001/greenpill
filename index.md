@@ -16,20 +16,19 @@ Inspired by the popular low-cost "Bluepill" and "Blackpill" STM32 boards, Greenp
 
 ![Greenpill Schematic](docs/greenpill-schematic.svg)
 
-## Pin assignment
-
-**TODO: table:**
- - Pin numbers
- - GPIO numbers
- - Timers
- - Available for PWM (in circuitpython)
- - SERCOM numbers
-
 ## Flashing CircuitPython
 1. **TODO: add UF2 bootloader instructions**
 2. [Build CircuitPython][BuildCPy] from [the fork][CPyFork]. Use the `atsamd` port and `BOARD=greenpill`.
 3. Enter the UF2 bootloader by double-tapping the RESET button on Greenpill
 4. You should now have a removable storage device called `CPYBOOT`. Copy `PATHTOUF2` to the root directory of this device. Once it has finished copying, `CPYBOOT` will disappear and `GREENPILL` will appear. You have now installed CircuitPython.
+
+## Pin assignment
+Pins are numbered **counter-clockwise** starting at the top-left pin (to the left of the USB-C connector).
+
+**TODO: add table for 1.0 pinout**
+
+## License
+The contents of this repository, which include the Greenpill hardware, documentation, and design files, are released under the **Solderpad 2.1 license**. The recommended firmware for GreenPill (CircuitPython) is NOT part of this repository. Both [Adafruit/CircuitPython][CircuitPython] and the [fork][CPyFork] that provides Greenpill compatibility are released under the **MIT License** 
 
 [CircuitPython]: https://github.com/Adafruit/CircuitPython "Adafruit/CircuitPython on GitHub"
 [CPyFork]: https://github.com/Stary2001/circuitpython/tree/greenpill "Branch 'greenpill' from Stary2001/CircuitPython on GitHub; forked from Adafruit"
