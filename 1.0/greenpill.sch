@@ -1348,7 +1348,7 @@ pa13
 Text Label 5850 2050 2    50   ~ 0
 pa14
 Text Label 5850 2300 2    50   ~ 0
-pb08
+pb09
 Text Label 5850 2400 2    50   ~ 0
 pb06
 $Comp
