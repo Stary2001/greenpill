@@ -1,0 +1,40 @@
+name: KiPlot
+
+# on:
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+
+on: [push, pull_request]
+# temporary while testing GH Actions in a non-master branch
+
+jobs:
+  pdfs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install pdf2svg
+      run: sudo apt-get install -y pdf2svg
+    - name: Make docs dir
+      run: "mkdir -p docs/"
+    - uses: nerdyscout/kicad-exports@v2.0
+      with:
+      # Required - kiplot config file
+        config: config.kiplot.yaml
+      # optional - prefix to output defined in config
+        dir: 'docs/'
+      # optional - schematic file
+        schema: '1.0/greenpill.sch'
+      # optional - PCB design file
+        board: '1.0/greenpill.kicad_pcb'
+    - name: Convert schematic PDFs to SVG
+      run: pdf2svg docs/Greenpill-Schematic.pdf docs/Greenpill-Schematic%d.svg all
+    - name: ls
+      run: "ls -la docs/"
+    - name: upload schematic
+      uses: actions/upload-artifact@v2
+      with:
+        name: Schematic and board PDFs
+        path: docs/
+        if-no-files-found: error

@@ -1,0 +1,21 @@
+kiplot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: true
+  ignore_unconnected: false
+        
+outputs:
+  - name: 'export schematic'
+    comment: "Export schematic (PDF)"
+    type: pdf_sch_print
+    options:
+      output: '%p-Schematic.%x'
+  - name: 'export board: all layers'
+    comment: "Print board (PDF)"
+    type: pdf_pcb_print
+    layers: 'all'
+    options:
+      output: '%p-Board.%x'
