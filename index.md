@@ -9,9 +9,10 @@ Inspired by the popular low-cost "Bluepill" and "Blackpill" STM32 boards, Greenp
    - Arm Cortex-M4 @ 120 MHz
    - 8 USB endpoints &ndash; enough for CDC & MSC (for CircuitPython), and some extras (eg. AUDIO)
  - Reversible USB Type-C connector supporting USB 2.0 data rates
- - On-board user LED and button with PWM
+ - On-board user LED and button
  - External 32.768 kHz crystal oscillator for RTC + clock source.
  - Up to 13 PWM-capable pins usable **simultaneously**
+ - SPI flash footprint on underside - no pin conflicts with broken out pins (uses SERCOM *n*).
 
 ![Greenpill Schematic](docs/greenpill-schematic.svg)
 
@@ -26,10 +27,10 @@ Inspired by the popular low-cost "Bluepill" and "Blackpill" STM32 boards, Greenp
 
 ## Flashing CircuitPython
 1. **TODO: add UF2 bootloader instructions**
-2. [Build CircuitPython][BuildCPy] from [the fork][CPyFork]. Use the `atsamd` port and `BOARD=TODO:`. **TODO:** changes need to be published on the [fork][CPyFork] .
+2. [Build CircuitPython][BuildCPy] from [the fork][CPyFork]. Use the `atsamd` port and `BOARD=greenpill`.
 3. Enter the UF2 bootloader by double-tapping the RESET button on Greenpill
 4. You should now have a removable storage device called `CPYBOOT`. Copy `PATHTOUF2` to the root directory of this device. Once it has finished copying, `CPYBOOT` will disappear and `GREENPILL` will appear. You have now installed CircuitPython.
 
 [CircuitPython]: https://github.com/Adafruit/CircuitPython "Adafruit/CircuitPython on GitHub"
-[CPyFork]: https://github.com/Stary2001/circuitpython "Stary2001/CircuitPython on GitHub; forked from Adafruit"
+[CPyFork]: https://github.com/Stary2001/circuitpython/tree/greenpill "Branch 'greenpill' from Stary2001/CircuitPython on GitHub; forked from Adafruit"
 [BuildCPy]: https://learn.adafruit.com/building-circuitpython?view=all "Building CircuitPython | Adafruit Learning System"
