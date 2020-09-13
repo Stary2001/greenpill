@@ -1,13 +1,20 @@
 name: KiPlot
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
-
-on: [push, pull_request]
-# temporary while testing GH Actions in a non-master branch
+on:
+  push:
+    paths:
+      - '**.pro'
+      - '**.sch'
+      - '**.kicad_pcb'
+      - '**.lib'
+      - '**/greenpill.pretty/*'
+  pull_request:
+    paths:
+      - '**.pro'
+      - '**.sch'
+      - '**.kicad_pcb'
+      - '**.lib'
+      - '**/greenpill.pretty/*'
 
 jobs:
   pdfs:
