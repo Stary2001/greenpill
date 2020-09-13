@@ -31,7 +31,7 @@ jobs:
     - name: ls
       run: "ls -la docs/"
     - name: Convert schematic PDFs to SVG
-      run: pdf2svg docs/Greenpill-Schematic.pdf docs/Greenpill-Schematic%d.svg all
+      run: pdf2svg docs/greenpill-schematic.pdf docs/greenpill-schematic%d.svg all
     - name: upload schematic
       uses: actions/upload-artifact@v2
       with:

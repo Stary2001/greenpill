@@ -12,10 +12,10 @@ outputs:
     comment: "Export schematic (PDF)"
     type: pdf_sch_print
     options:
-      output: '%p-Schematic.%x'
+      output: '%p-schematic.%x'
   - name: 'export board: all layers'
     comment: "Print board (PDF)"
     type: pdf_pcb_print
     layers: 'all'
     options:
-      output: '%p-Board.%x'
+      output: '%p-board.%x'
