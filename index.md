@@ -12,7 +12,7 @@ Inspired by the popular low-cost "Bluepill" and "Blackpill" STM32 boards, Greenp
  - On-board user LED and button
  - External 32.768 kHz crystal oscillator for RTC + clock source.
  - Up to 13 PWM-capable pins usable **simultaneously**
- - SPI flash footprint on underside - no pin conflicts with broken out pins (uses SERCOM *n*).
+ - SPI flash footprint on underside - no pin conflicts with broken out pins (uses **SERCOM2**).
 
 ![Greenpill Schematic](docs/greenpill-schematic.svg)
 
