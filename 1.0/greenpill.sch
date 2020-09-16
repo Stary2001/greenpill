@@ -1405,17 +1405,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 1250 1150 1050
 Connection ~ 1150 1050
-$Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
-U 1 1 5F548A14
-P 4750 3300
-F 0 "#LOGO1" H 4750 3575 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 4750 3075 50  0001 C CNN
-F 2 "" H 4750 3300 50  0001 C CNN
-F 3 "~" H 4750 3300 50  0001 C CNN
-	1    4750 3300
-	1    0    0    -1  
-$EndComp
 Text Label 7850 2800 2    50   ~ 0
 pa27
 Text Label 7850 2700 2    50   ~ 0
@@ -1456,4 +1445,15 @@ Text Label 7850 2500 2    50   ~ 0
 pa20
 Text Label 7850 2100 2    50   ~ 0
 pb01
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5F6303FA
+P 5150 3050
+F 0 "LOGO1" H 5150 3325 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5150 2825 50  0001 C CNN
+F 2 "greenpill:OSHW-Symbol_4x4.5mm_SilkScreen" H 5150 3050 50  0001 C CNN
+F 3 "~" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
