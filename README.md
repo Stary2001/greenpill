@@ -4,8 +4,6 @@ Greenpill
 
 ![Assembled PCB in a breadboard](docs/greenpill-black.jpg)
 
-![Greenpill Schematic](docs/greenpill-schematic.svg)
-
 Inspired by the popular low-cost "Bluepill" and "Blackpill" STM32 boards, Greenpill aims to maintain some compatibility with those designs while adding features from the SAMD5x platform. Greenpill is designed to be used with [CircuitPython], although a SAMD51 port of Arduino could also be used.
 
 ## Features
